@@ -6,6 +6,7 @@
 package desenvolvedor;
 
 import funcionario.funcionario;
+import java.util.Arrays;
 /**
  *
  * @author rafael
@@ -35,5 +36,12 @@ public class dev extends funcionario{
         System.out.println("Salario: R$" + salario);
         System.out.println("Bonificação :" + getBonificacaoDev());
         System.out.println("Salario Atualizado: R$" + Nslario());
+    }
+    
+        public void imprimirBD(){
+        String[] BTS = {name, CPF};
+        double[] BTD = {Nsalario, bonificacaoDev, bonificacaoGer};
+        System.out.println(Arrays.toString(BTS));
+        System.out.println(Arrays.toString(BTD));
     }
 }

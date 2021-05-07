@@ -11,6 +11,7 @@ package atividadeiv;
  */
 import gerente.gerente;
 import desenvolvedor.dev;
+//import funcionario.funcionario;
 
 public class AtividadeIV {
     public static void main(String[] args) {
@@ -39,6 +40,13 @@ public class AtividadeIV {
         dev ti = new dev("Crescencio", "000.000.000-00", 4000);
         ti.setBonificacaoDev(0.15);
         ti.imprimir();
+        
+        System.out.println("============================");
+        
+        Ger.imprimirBD();
+        dos.imprimirBD();
+        tre.imprimirBD();
+        ti.imprimirBD();
         
     }
     

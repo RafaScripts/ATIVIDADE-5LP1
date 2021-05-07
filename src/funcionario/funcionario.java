@@ -37,6 +37,7 @@ public class funcionario {
         System.out.println("Nome: " + name);
         System.out.println("CPF: " + CPF);
         System.out.println("Salario: R$" + salario);
+        
     }
 
     

@@ -6,6 +6,7 @@
 package gerente;
 
 import funcionario.funcionario;
+import java.util.Arrays;
 
 /**
  *
@@ -40,5 +41,12 @@ public class gerente extends funcionario{
         System.out.println("CRM: " + CRM);
         System.out.println("Bonificação :" + getBonificacaoGer());
         System.out.println("Salario Atualizado: R$" + Nslario());
+    }
+    
+    public void imprimirBD(){
+        String[] BTS = {name, CPF};
+        double[] BTD = {Nsalario, bonificacaoDev, bonificacaoGer};
+        System.out.println(Arrays.toString(BTS));
+        System.out.println(Arrays.toString(BTD));
     }
 }
