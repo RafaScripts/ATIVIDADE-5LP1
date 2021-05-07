@@ -11,31 +11,29 @@ import funcionario.funcionario;
  * @author rafael
  */
 public class dev extends funcionario{
-    public dev(String nome, String CPF, double salario ){
+    public double Nsalario;
+    public dev(String nome, String CPF, double salario){
         super(nome,CPF,salario);
     }
-    
-    /**
-     *
-     * @return
-     */
-    @Override
-    public double getBonificacao() {
-        return bonificacao;
-    }
 
-    public void setBonificacao(double bonificacao) {
-        this.bonificacao = bonificacao;
+    public double getBonificacaoDev() {
+        return bonificacaoDev;
+    }
+    
+    public double Nslario(){
+       Nsalario = (bonificacaoDev * salario) + salario;
+        return Nsalario;
     }
     
     /**
-     *
+     * 0,15
      */
     @Override
     public void imprimir(){
         System.out.println("Nome: " + name);
         System.out.println("CPF: " + CPF);
         System.out.println("Salario: R$" + salario);
-        System.out.println("Bonificação: " + bonificacao);
+        System.out.println("Bonificação :" + getBonificacaoDev());
+        System.out.println("Salario Atualizado: R$" + Nslario());
     }
 }

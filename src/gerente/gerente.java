@@ -13,27 +13,24 @@ import funcionario.funcionario;
  */
 public class gerente extends funcionario{
     protected double CRM;
+    public double Nsalario;
     
     public gerente(String nome, String CPF, double salario, double CRM){
         super(nome,CPF,salario);
         this.CRM = CRM;
     }
 
-    /**
-     *
-     * @return
-     */
-    @Override
-    public double getBonificacao() {
-        return bonificacao;
+    public double getBonificacaoGer() {
+        return bonificacaoGer;
     }
 
-    public void setBonificacao(double bonificacao) {
-        this.bonificacao = bonificacao;
+    public double Nslario(){
+       Nsalario = (bonificacaoGer * salario) + salario;
+        return Nsalario;
     }
     
     /**
-     *
+     *0,20
      */
     @Override
     public void imprimir(){
@@ -41,6 +38,7 @@ public class gerente extends funcionario{
         System.out.println("CPF: " + CPF);
         System.out.println("Salario: R$" + salario);
         System.out.println("CRM: " + CRM);
-        System.out.println("Bonificação: " + bonificacao);
+        System.out.println("Bonificação :" + getBonificacaoGer());
+        System.out.println("Salario Atualizado: R$" + Nslario());
     }
 }

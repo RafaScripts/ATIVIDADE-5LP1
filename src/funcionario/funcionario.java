@@ -13,14 +13,25 @@ public class funcionario {
     protected String name;
     protected String CPF;
     protected double salario;
-    public double bonificacao;
+    public double bonificacaoDev;
+    public double bonificacaoGer;
     
     public funcionario(String name, String CPF, double salario) {
         this.name = name;
         this.CPF = CPF;
         this.salario = salario;
-        //this.bonificacao = bonificacao;
+        
     }
+
+    public void setBonificacaoDev(double bonificacaoDev) {
+        this.bonificacaoDev = bonificacaoDev;
+    }
+
+    public void setBonificacaoGer(double bonificacaoGer) {
+        this.bonificacaoGer = bonificacaoGer;
+    }
+    
+    
     
     public void imprimir(){
         System.out.println("Nome: " + name);
@@ -28,9 +39,6 @@ public class funcionario {
         System.out.println("Salario: R$" + salario);
     }
 
-    public double getBonificacao() {
-        return bonificacao;
-    }
     
     
 }
