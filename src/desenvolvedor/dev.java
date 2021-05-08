@@ -34,7 +34,7 @@ public class dev extends funcionario{
         System.out.println("Nome: " + name);
         System.out.println("CPF: " + CPF);
         System.out.println("Salario: R$" + salario);
-        System.out.println("Bonificação :" + getBonificacaoDev());
+        System.out.println("Bonificação : %" + getBonificacaoDev()*100);
         System.out.println("Salario Atualizado: R$" + Nslario());
     }
     
@@ -45,3 +45,4 @@ public class dev extends funcionario{
         System.out.println(Arrays.toString(BTD));
     }
 }
+

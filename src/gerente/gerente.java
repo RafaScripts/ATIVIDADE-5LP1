@@ -39,7 +39,7 @@ public class gerente extends funcionario{
         System.out.println("CPF: " + CPF);
         System.out.println("Salario: R$" + salario);
         System.out.println("CRM: " + CRM);
-        System.out.println("Bonificação :" + getBonificacaoGer());
+        System.out.println("Bonificação : %" + getBonificacaoGer()*100);
         System.out.println("Salario Atualizado: R$" + Nslario());
     }
     
